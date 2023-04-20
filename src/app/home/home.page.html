@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blank
+      Update Page Status
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -9,11 +9,12 @@
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
+      <ion-title size="large">Update Page Status</ion-title>
     </ion-toolbar>
   </ion-header>
 
   <div id="container">
- <h3>Welcome to Mobile Apps Starter project 2023</h3>
+    <h3>Your latest status: {{statusStage}}</h3>
+    <ion-button [routerLink]="['/status']">Update Status</ion-button>
   </div>
 </ion-content>
